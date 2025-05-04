@@ -5,11 +5,18 @@
         "php": "8.0",
         "wp": "latest"
     },
+	"features": {
+		"networking": true
+	},
     "steps": [
         {
             "step": "login",
             "username": "admin",
             "password": "password"
-        }
+        },
+		{
+			"step": "setSiteLanguage",
+			"language": "ja"
+		}
     ]
 }
