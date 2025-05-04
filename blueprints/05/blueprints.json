@@ -20,7 +20,7 @@
 		},
 		{
 			"step": "runPHP",
-			"code": "<?php require '/wordpress/wp-load.php'; update_option( 'blogname', 'Change blogname from runPHP!"
+			"code": "<?php require '/wordpress/wp-load.php'; update_option( 'blogname', 'Change blogname from runPHP!' );"
 		}
     ]
 }
