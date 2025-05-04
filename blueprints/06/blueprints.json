@@ -1,0 +1,30 @@
+{
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "landingPage": "/wp-admin/edit.php",
+    "preferredVersions": {
+        "php": "8.0",
+        "wp": "latest"
+    },
+	"features": {
+		"networking": true
+	},
+    "steps": [
+        {
+            "step": "login",
+            "username": "admin",
+            "password": "password"
+        },
+		{
+			"step": "setSiteLanguage",
+			"language": "ja"
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/mu-plugins/my-playground-plugin.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/shimotmk/playground-tutorial/refs/heads/main/blueprints/06/my-playground-plugin.php"
+			}
+		}
+    ]
+}
